@@ -1,5 +1,3 @@
-module Ruby
-  module Sendhub
-    VERSION = "0.0.5"
-  end
+module SendHub
+  VERSION = "0.0.5"
 end

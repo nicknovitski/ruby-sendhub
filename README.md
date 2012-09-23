@@ -14,7 +14,7 @@ A SendHub account. Get your API key [here](https://www.sendhub.com/settings)
 
 Create a new instance of the API wrapper:
 
-		sh = SendHub.new("your_api_key", "your_number")
+		sh = SendHub::Account.new("your_api_key", "your_number")
 		
 As a simple example, to grab all of your contacts
 

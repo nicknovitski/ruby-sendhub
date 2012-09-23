@@ -4,7 +4,7 @@ require "ruby-sendhub/version"
 
 Gem::Specification.new do |s|
   s.name        = "ruby-sendhub"
-  s.version     = Ruby::Sendhub::VERSION
+  s.version     = SendHub::VERSION
   s.authors     = ["SoonKhen OwYong"]
   s.email       = ["dude@owyong.sk"]
   s.homepage    = "https://github.com/skowyong/ruby-sendhub"
