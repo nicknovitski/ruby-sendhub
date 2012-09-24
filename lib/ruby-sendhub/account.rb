@@ -1,13 +1,9 @@
-require 'httparty'
 require 'json'
+require_relative 'service'
 
 module SendHub
   class Account
-    include HTTParty
-
     attr_accessor :api_key, :number
-
-    headers  "Content-Type" => "application/json"
     
     def initialize(api_key = nil, number = nil)
       @number = number
@@ -47,7 +43,7 @@ module SendHub
     end
 
     def send_request(request_type, url, json)
-      self.class.send(request_type, url, json).parsed_response
+      Service.send(request_type, url, json).parsed_response
     end
 
     def base_url
